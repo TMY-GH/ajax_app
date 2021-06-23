@@ -9,6 +9,6 @@ class PostsController < ApplicationController
 
   def create
     Post.create(content: params[:content])
-    redirect_to action: :indext
+    redirect_to root_path
   end
 end
